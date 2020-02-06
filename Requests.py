@@ -35,7 +35,7 @@ URL = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
 # with open('DE.txt') as DE:   # задать путь к файлу
 #     a = DE.read()
 # pprint(a)
-def translate_it(text, from_lang=input('Введите язык оригинала: '), to_lang=input('Введите язык перевода: ')):
+def translate_it(text, from_lang=input('Введите язык оригинала: '), to_lang='ru'):
     """
     https://translate.yandex.net/api/v1.5/tr.json/translate ?
     key=<API-ключ>
@@ -70,7 +70,7 @@ if __name__ == '__main__':
     TOKEN = 'AgAAAAAGGrLcAAYbXRZjF_xTQUyxtrkqH8rN7y8'
     URL_UP = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
     params = {
-        'path': 'app:/Test/',
+        'path': 'app:/File.txt',
         'overwrite': True,
     }
     headers = {
